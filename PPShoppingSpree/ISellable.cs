@@ -8,7 +8,7 @@ namespace PPShoppingSpree
 {
     internal interface ISellable
     {
-        void CalcPrice(int precentage);
+        void CalcPrice(bool isOnSale, int precentage);
         void PrintInfo();
     }
 }

@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace PPShoppingSpree
+namespace PPShoppingSpree.Items
 {
-    internal class Jacket : ClothingItem
+    internal class Laptop : ElectronicItem
     {
-        public Jacket(string name, int amount, decimal price, string size)
+        public Laptop(string name, int amount, decimal price, int insuranceYears = 5)
         {
             Name = name;
             Amount = amount;
             Price = price;
-            Size = size; 
+            InsuranceYears = insuranceYears;
         }
     }
 }
